@@ -17,7 +17,7 @@ async function getTransactions(): Promise<{
     const transactions = await db.transaction.findMany({
       where: { userId },
       orderBy: {
-        createAt: 'desc',
+        createAt: 'desc', 
       },
     });
 
